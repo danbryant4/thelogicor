@@ -1,0 +1,4 @@
+add_action( 'gform_pre_submission', 'pre_submission_handler' );
+function pre_submission_handler( $form ) {
+	$_POST['input_14'] = date('m/d/Y g:i a');
+}
